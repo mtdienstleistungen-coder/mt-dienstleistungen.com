@@ -43,9 +43,9 @@ export function CompanyHistorySection() {
                   geplant und professionell umgesetzt.
                 </p>
                 <p>
-                  Aktuell betreut {company.name} bereits vier Objekte und wächst kontinuierlich
-                  weiter. Der persönliche Kontakt zu den Kunden sowie eine hohe Servicequalität
-                  stehen dabei immer an erster Stelle.
+                  Aktuell betreut {company.name} bereits {company.objectsManaged} Objekte und
+                  wächst kontinuierlich weiter. Der persönliche Kontakt zu den Kunden sowie eine
+                  hohe Servicequalität stehen dabei immer an erster Stelle.
                 </p>
               </div>
             </ScrollReveal>

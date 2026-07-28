@@ -27,12 +27,11 @@
 }
 
 html {
+  /* Sorgt dafür, dass Anker-Links (z. B. der "Leistungen"-Button in der
+     Navigation) und scrollIntoView-Aufrufe weich scrollen – ganz normales,
+     natives Scrollen per Mausrad/Trackpad/Touch/Tastatur bleibt davon
+     unberührt und wird an keiner Stelle abgefangen. */
   scroll-behavior: smooth;
-  /* Sanftes natives Fallback zur Vorher-/Nachher-Snap-Logik aus
-     useScrollSnapIntro.ts: "proximity" greift nur unterstützend, sofern der
-     Nutzer ohnehin nahe an einem Snap-Punkt (.snap-start) zum Stehen kommt,
-     und blockiert kein normales Scrollen im restlichen Seiteninhalt. */
-  scroll-snap-type: y proximity;
 }
 
 /* Weicher, hochwertiger Übergang beim Wechsel zwischen Tag- und Nacht-Modus:
@@ -59,7 +58,6 @@ html {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-    scroll-snap-type: none;
   }
 
   *,

@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
-import { useScrollSnapIntro } from "@/lib/hooks/useScrollSnapIntro";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
 import { Logo } from "@/components/layout/Logo";
 
@@ -21,8 +20,6 @@ export function VideoHeroIntro() {
   const prefersReduced = useReducedMotion();
   const [isMobile, setIsMobile] = useState(false);
 
-  useScrollSnapIntro(sectionRef);
-
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 767px)");
     setIsMobile(mediaQuery.matches);
@@ -33,16 +30,18 @@ export function VideoHeroIntro() {
 
   const showVideo = !isMobile && !prefersReduced;
 
+  // Normales, weiches Scrollen zum nächsten Bereich – kein Event-Listener,
+  // keine Scroll-Sperre, keine Berechnung: scrollIntoView übernimmt das
+  // komplett, Mausrad/Trackpad/Touch/Tastatur bleiben davon unberührt.
   const scrollToContent = () => {
-    const introHeight = sectionRef.current?.offsetHeight ?? window.innerHeight;
-    window.scrollTo({ top: introHeight, behavior: "smooth" });
+    sectionRef.current?.nextElementSibling?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section
       id="start"
       ref={sectionRef}
-      className="snap-start relative h-dvh w-full overflow-hidden bg-anthracite-950"
+      className="relative h-dvh w-full overflow-hidden bg-anthracite-950"
     >
       {showVideo ? (
         <video

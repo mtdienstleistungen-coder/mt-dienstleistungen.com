@@ -98,8 +98,9 @@ export function AnimatedHero({ videoSrc, posterSrc }: AnimatedHeroProps) {
 
   return (
     <section
+      id="hero-highlights"
       ref={sectionRef}
-      className="snap-start relative flex min-h-[92vh] scroll-mt-20 items-center overflow-hidden pt-20"
+      className="relative flex min-h-[92vh] scroll-mt-20 items-center overflow-hidden pt-20"
     >
       <div ref={sceneRef} className="absolute inset-0">
         <div ref={parallaxRef} className="absolute inset-0">

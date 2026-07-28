@@ -34,10 +34,9 @@ export const metadata: Metadata = {
     siteName: company.name,
     title: company.seo.defaultTitle,
     description: company.seo.defaultDescription,
-    images: [{ url: company.seo.ogImage }],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: company.seo.defaultTitle,
     description: company.seo.defaultDescription,
   },

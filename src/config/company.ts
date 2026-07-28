@@ -13,6 +13,7 @@ export const company = {
   legalForm: "MT Dienstleistungen",
 
   contactPerson: "Markus Fres",
+  taxId: "DE460356463",
 
   phone: "+4915901055517",
   phoneDisplay: "0159 01055517",
@@ -32,13 +33,10 @@ export const company = {
   objectsManaged: 15,
 
   seo: {
-    // Noch keine eigene Domain vorhanden – vor dem Livegang durch die echte
-    // Domain ersetzen (u. a. relevant für sitemap.xml, robots.txt, JSON-LD).
-    siteUrl: "https://www.mt-dienstleistungen-platzhalter.de",
+    siteUrl: "https://www.mt-dienstleistungen.com",
     defaultTitle: "MT Dienstleistungen | Hausmeisterservice und Renovierung in Paderborn",
     defaultDescription:
-      "MT Dienstleistungen in Paderborn – zuverlässige Unterstützung bei Hausmeisterservice, Renovierungsarbeiten, Gartenpflege, Bodenarbeiten und Arbeiten rund um Ihre Immobilie.",
-    ogImage: "/images/og-cover.jpg",
+      "MT Dienstleistungen in Paderborn – zuverlässige Unterstützung bei Hausmeisterservice, Renovierungsarbeiten, Gartenpflege, Bodenarbeiten und weiteren Leistungen rund um Ihre Immobilie.",
   },
 };
 

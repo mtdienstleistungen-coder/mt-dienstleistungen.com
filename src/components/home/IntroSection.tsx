@@ -17,10 +17,10 @@ export function IntroSection() {
         <ScrollReveal direction="right">
           <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-3xl border border-border/10 bg-surface/60 shadow-card">
             <Image
-              src="/character/handwerker-winkend.png"
+              src="/character/inhaber-foto-original.jpg"
               alt={`${company.contactPerson} von ${company.name}`}
               fill
-              className="object-contain p-10"
+              className="object-contain"
               sizes="(min-width: 1024px) 480px, 90vw"
             />
           </div>
