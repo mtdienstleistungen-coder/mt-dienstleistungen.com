@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz | MT Dienstleistungen</title>
+<meta name="description" content="Datenschutzerklärung der MT Dienstleistungen Website.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500;62..125,700;62..125,800;62..125,900&family=Figtree:wght@400;500;600&family=Caveat:wght@600&display=swap">
+<style>
+:root{
+  --ink:#08172d;
+  --ink-2:#0f2240;
+  --paper:#f6f2eb;
+  --paper-2:#ece4d6;
+  --gold:#c8825a;
+  --gold-deep:#9a5634;
+  --text:#1d1b17;
+  --muted:#5f584d;
+  --muted-dark:#b3bccb;
+  --line:#d9cfbe;
+  --line-dark:#1e3250;
+  --white:#ffffff;
+  --f-display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --f-body:"Figtree","Segoe UI",system-ui,sans-serif;
+  --f-script:"Caveat","Segoe Script",cursive;
+  --wrap:1180px;
+  --r:4px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--paper);color:var(--text);font-family:var(--f-body);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--gold);color:var(--ink);padding:8px 14px;z-index:100;font-weight:600}
+.skip:focus{left:16px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media(min-width:720px){.wrap{padding-left:max(32px,env(safe-area-inset-left,0px));padding-right:max(32px,env(safe-area-inset-right,0px))}}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.05}
+h1{font-size:clamp(1.9rem,3.4vw,3.3rem);overflow-wrap:break-word;font-weight:900;font-stretch:88%;letter-spacing:-.01em;text-transform:uppercase}
+p{margin:0}
+.eyebrow{font-family:var(--f-display);font-size:.78rem;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.dark .eyebrow{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:var(--r);font-family:var(--f-display);font-weight:700;font-size:.92rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:#dc9a72}
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(8,23,45,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line-dark);color:var(--white)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--white)}
+.brand-mark{font-family:var(--f-display);font-weight:900;font-size:1.9rem;font-stretch:110%;line-height:1;letter-spacing:-.02em;position:relative;padding-top:6px}
+.brand-mark .m{color:var(--gold);background:linear-gradient(135deg,#5e2e15 0%,#e4a47c 22%,#ffdcc4 34%,#b8693f 48%,#7c3f20 62%,#eab08a 78%,#4f250f 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-text b{font-family:var(--f-display);font-weight:500;font-size:.72rem;letter-spacing:.34em}
+.brand-text span{font-size:.62rem;letter-spacing:.2em;color:var(--muted-dark);text-transform:uppercase;margin-top:3px}
+.menu{display:flex;align-items:center;gap:30px;list-style:none;margin:0;padding:0}
+.menu a{text-decoration:none;font-size:.9rem;font-weight:500;color:#ddd5c8;position:relative;padding:6px 0;transition:color .2s}
+.menu a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--gold);transition:right .3s}
+.menu a:hover{color:var(--white)}
+.menu a:hover::after{right:0}
+.nav .btn{padding:11px 18px;font-size:.8rem}
+.burger{display:none;background:none;border:1px solid var(--line-dark);color:var(--white);width:44px;height:44px;border-radius:var(--r);cursor:pointer;align-items:center;justify-content:center}
+.burger svg{width:22px;height:22px}
+@media(max-width:940px){
+  .menu,.nav .btn-gold{display:none}
+  .burger{display:inline-flex}
+  .menu.open{display:flex;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--ink);border-bottom:1px solid var(--line-dark);padding:8px max(16px,env(safe-area-inset-right,0px)) 18px max(16px,env(safe-area-inset-left,0px))}
+  .menu.open a{display:block;padding:14px 0;border-bottom:1px solid var(--line-dark);font-size:1rem}
+  .menu.open a::after{display:none}
+}
+.dark{background:var(--ink);color:var(--white)}
+section{padding-block:56px}
+@media(max-width:720px){section{padding-block:40px}}
+.page-head{display:flex;flex-direction:column;gap:18px}
+.footer{background:#050f1f;color:var(--muted-dark);padding-block:64px 32px;font-size:.92rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid var(--line-dark)}
+.foot-grid h4{font-family:var(--f-display);font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin:0 0 16px}
+.foot-grid ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.foot-grid a{text-decoration:none}
+.foot-grid a:hover{color:var(--white)}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;font-size:.85rem}
+.foot-bottom nav{display:flex;gap:22px}
+.foot-bottom a{text-decoration:none}
+.foot-bottom a:hover{color:var(--white)}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Rechtstext */
+.legal-wrap{max-width:760px}
+.legal h3{font-family:var(--f-display);font-size:1.3rem;font-weight:800;margin:40px 0 12px;color:var(--text)}
+.legal h3:first-child{margin-top:0}
+.legal h4{font-family:var(--f-display);font-size:1.02rem;font-weight:700;margin:24px 0 8px;color:var(--text)}
+.legal p{margin-bottom:16px;color:var(--muted)}
+.legal ul{margin:0 0 16px;padding-left:22px;color:var(--muted)}
+.legal li{margin-bottom:4px}
+.legal a{color:var(--gold-deep);text-decoration:underline}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Zum Hauptinhalt springen</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html#start" aria-label="MT Dienstleistungen – zur Startseite">
+      <span class="brand-mark"><span class="m">M</span>T</span>
+      <span class="brand-text"><b>DIENSTLEISTUNGEN</b><span>Paderborn</span></span>
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="index.html#start">Start</a></li>
+      <li><a href="index.html#leistungen">Leistungen</a></li>
+      <li><a href="index.html#ueber-uns">Über uns</a></li>
+      <li><a href="index.html#projekte">Projekte</a></li>
+      <li><a href="index.html#kontakt">Kontakt</a></li>
+    </ul>
+    <a class="btn btn-gold" href="index.html#kontakt">Jetzt anfragen</a>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="dark">
+    <div class="wrap page-head">
+      <span class="eyebrow">Rechtliches</span>
+      <h1>Datenschutzerklärung</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap legal-wrap legal">
+
+      <h3>1. Einleitung</h3>
+      <p>Der Schutz Ihrer persönlichen Daten hat höchste Priorität. Diese Datenschutzerklärung erläutert die Art, den Umfang und den Zweck der Verarbeitung personenbezogener Daten (im Folgenden „Daten“ genannt) in Zusammenhang mit dem Onlineangebot. Dies umfasst die zugehörige Website, Funktionen und Inhalte sowie die externen Onlinepräsenzen, wie beispielsweise die Social-Media-Profile (im Folgenden zusammengefasst als „Onlineangebot“). Ihre personenbezogenen Daten werden vertraulich behandelt und es wird strikt den gesetzlichen Datenschutzvorschriften sowie den Bestimmungen dieser Datenschutzerklärung entsprochen.</p>
+
+      <h4>Allgemeine Hinweise</h4>
+      <p>Diese Datenschutzerklärung gibt Ihnen einen umfassenden Überblick darüber, was mit Ihren personenbezogenen Daten geschieht, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Informationen, die dazu genutzt werden können, Sie persönlich zu identifizieren. Detaillierte Informationen zum Datenschutz entnehmen Sie bitte dieser vollständigen Datenschutzerklärung.</p>
+
+      <h4>Verantwortliche Stelle</h4>
+      <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Die Kontaktdaten des Verantwortlichen finden Sie im Abschnitt „2. Verantwortlicher“ in dieser Datenschutzerklärung.</p>
+
+      <h4>Erhebung Ihrer Daten</h4>
+      <p>Personenbezogene Daten werden zum einen dadurch erhoben, dass Sie diese aktiv mitteilen, z. B. durch das Ausfüllen eines Kontaktformulars. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch die IT-Systeme des Verantwortlichen erfasst. Hierbei handelt es sich vor allem um technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Diese Datenerfassung erfolgt automatisch, sobald Sie die Website betreten.</p>
+
+      <h4>Verwendung Ihrer Daten</h4>
+      <p>Ein Teil der Daten wird erhoben, um die fehlerfreie Bereitstellung der Website sicherzustellen. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden, um das Angebot zu optimieren und auf Ihre Bedürfnisse anzupassen.</p>
+
+      <h4>Datenübermittlung an externe Stellen</h4>
+      <p>Im Rahmen der Geschäftstätigkeit des Verantwortlichen kann es erforderlich sein, personenbezogene Daten an externe Stellen zu übermitteln. Diese Übermittlung erfolgt ausschließlich unter bestimmten Bedingungen: wenn die Weitergabe zur Erfüllung eines Vertrags notwendig ist, wenn eine gesetzliche Verpflichtung besteht, beispielsweise an Steuerbehörden, wenn ein berechtigtes Interesse gemäß Art. 6 Abs. 1 lit. f DSGVO vorliegt, oder wenn eine andere rechtliche Grundlage die Datenübermittlung erlaubt. Beim Einsatz externer Dienstleister zur Datenverarbeitung erfolgt die Weitergabe personenbezogener Daten ausschließlich auf Grundlage eines gültigen Vertrags zur Auftragsverarbeitung gemäß Art. 28 DSGVO. Wenn eine gemeinsame Verarbeitung der Daten mit anderen Stellen stattfindet, wird ein Vertrag über die gemeinsame Verarbeitung gemäß Art. 26 DSGVO abgeschlossen.</p>
+
+      <h4>Widerruf von Einwilligungen zur Datenverarbeitung</h4>
+      <p>Bestimmte Datenverarbeitungen können nur mit Ihrer ausdrücklichen Einwilligung erfolgen. Diese Einwilligung kann jederzeit widerrufen werden. Die Rechtmäßigkeit der bis zum Zeitpunkt des Widerrufs erfolgten Datenverarbeitung bleibt durch den Widerruf unberührt.</p>
+
+      <h4>Widerspruchsrecht bei spezifischen Datenverarbeitungen und Werbemaßnahmen (Art. 21 DSGVO)</h4>
+      <p>Erfolgt die Verarbeitung Ihrer personenbezogenen Daten auf der Basis von Art. 6 Abs. 1 lit. e oder f DSGVO, haben Sie das Recht, jederzeit gegen diese Verarbeitung Widerspruch einzulegen, sofern Sie Gründe haben, die sich aus Ihrer besonderen Situation ergeben. Dies betrifft auch das Profiling, das auf diesen Bestimmungen basiert. Die konkrete Rechtsgrundlage der Datenverarbeitung finden Sie in dieser Datenschutzerklärung. Bei einem Widerspruch wird der Verantwortliche Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei denn, es können zwingende schutzwürdige Gründe nachgewiesen werden, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen (Widerspruch gemäß Art. 21 Abs. 1 DSGVO).</p>
+      <p>Werden Ihre personenbezogenen Daten für Zwecke der Direktwerbung genutzt, steht Ihnen das Recht zu, jederzeit Widerspruch gegen diese Verarbeitung einzulegen. Dies gilt auch für das Profiling, sofern es in Verbindung mit Direktwerbung steht. Nach Ihrem Widerspruch wird der Verantwortliche Ihre personenbezogenen Daten nicht mehr für diese Werbezwecke verwenden (Widerspruch gemäß Art. 21 Abs. 2 DSGVO).</p>
+
+      <h4>Rechte gemäß Datenschutz-Grundverordnung</h4>
+      <p>Sie haben das Recht, bei Verstößen gegen die DSGVO eine Beschwerde bei einer zuständigen Aufsichtsbehörde einzureichen. Dieses Recht kann insbesondere in dem Mitgliedstaat ausgeübt werden, in dem sich der gewöhnliche Aufenthaltsort, der Arbeitsplatz oder der Ort des mutmaßlichen Verstoßes befindet. Andere verwaltungsrechtliche oder gerichtliche Rechtsbehelfe bleiben hiervon unberührt.</p>
+      <p>Personenbezogene Daten, die auf Basis einer Einwilligung oder zur Erfüllung eines Vertrags automatisiert verarbeitet werden, können in einem strukturierten, gängigen und maschinenlesbaren Format angefordert werden. Auf Wunsch kann auch eine direkte Übermittlung dieser Daten an einen anderen Verantwortlichen erfolgen, sofern dies technisch möglich ist.</p>
+      <p>Jede betroffene Person hat das Recht, unentgeltlich Auskunft über ihre gespeicherten personenbezogenen Daten, deren Herkunft, Empfänger sowie den Zweck der Datenverarbeitung zu erhalten. Darüber hinaus besteht ein Recht auf Berichtigung oder Löschung dieser Daten, sofern gesetzliche Bestimmungen dies zulassen. Bei weiteren Fragen oder Anliegen zum Thema personenbezogene Daten kann jederzeit Kontakt mit dem Verantwortlichen aufgenommen werden.</p>
+      <p>Es besteht das Recht, die Einschränkung der Verarbeitung personenbezogener Daten zu verlangen, wenn die Richtigkeit der Daten bestritten wird und eine Überprüfung aussteht. Auch bei unrechtmäßiger Verarbeitung kann anstelle einer Löschung die Einschränkung der Datenverarbeitung verlangt werden. Weiterhin kann die Einschränkung gefordert werden, wenn die Daten nicht mehr benötigt werden, aber zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich sind. Bei Widerspruch gegen die Verarbeitung gemäß Art. 21 Abs. 1 DSGVO besteht, bis zur Klärung, wessen Interessen überwiegen, ebenfalls das Recht auf Einschränkung.</p>
+      <p>Sind die personenbezogenen Daten in der Verarbeitung eingeschränkt, dürfen diese, abgesehen von der Speicherung, nur mit Einwilligung der betroffenen Person oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen, zum Schutz der Rechte anderer natürlicher oder juristischer Personen oder aus Gründen eines wichtigen öffentlichen Interesses der EU oder eines Mitgliedstaates verarbeitet werden.</p>
+
+      <h3>2. Verantwortlicher</h3>
+      <p>Verantwortlicher für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
+      <p>
+        MT Dienstleistungen<br>
+        Markus Fres<br>
+        Auf der Sühle 12, 33102 Paderborn
+      </p>
+      <p>Kontaktmöglichkeiten finden Sie im <a href="impressum.html">Impressum</a>.</p>
+
+      <h3>3. Auftragsverarbeiter</h3>
+      <p>Die Zusammenarbeit erfolgt mit verschiedenen Auftragsverarbeitern, die im Auftrag Daten verarbeiten. Diese Dienstleister sind vertraglich verpflichtet, die Daten vertraulich zu behandeln und ausschließlich im Rahmen der jeweiligen Dienstleistung zu nutzen. Zudem gibt es Fälle, in denen die Verantwortung für die Datenverarbeitung gemeinsam mit anderen Stellen getragen wird. In solchen Fällen werden die Verantwortlichkeiten transparent geregelt und dokumentiert, um die Einhaltung der Datenschutzanforderungen sicherzustellen.</p>
+
+      <h3>4. Begriffsbestimmungen</h3>
+      <p>Um die Transparenz dieser Datenschutzerklärung zu gewährleisten und sie für jedermann verständlich zu machen, werden in dieser Erklärung vorrangig Begriffe verwendet, die auch in der Datenschutz-Grundverordnung (DSGVO) definiert sind. Die vollständigen gesetzlichen Definitionen finden sich in Art. 4 DSGVO. Im Folgenden werden die wichtigsten Begriffe im Zusammenhang mit dieser Datenschutzerklärung erläutert:</p>
+      <ul>
+        <li><b>Personenbezogene Daten:</b> Dies umfasst alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden „betroffene Person“) beziehen. Eine Person gilt als identifizierbar, wenn sie direkt oder indirekt, insbesondere durch Zuordnung zu einer Kennung wie einem Namen, einer Kennnummer, Standortdaten, einer Online-Kennung (z. B. Cookie) oder einem oder mehreren spezifischen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser Person sind.</li>
+        <li><b>Verarbeitung:</b> Dieser Begriff umfasst jede Handlung oder eine Reihe von Handlungen, die im Zusammenhang mit personenbezogenen Daten durchgeführt werden, unabhängig davon, ob sie mit oder ohne Hilfe automatisierter Verfahren erfolgen. Dies kann das Erheben, Erfassen, Organisieren, Ordnen, Speichern, Anpassen oder Verändern, Auslesen, Abfragen, Verwenden, Offenlegen durch Übermittlung, Verbreiten oder eine andere Form der Bereitstellung, Abgleichen oder Verknüpfen, Einschränken, Löschen oder Vernichten von Daten umfassen.</li>
+        <li><b>Verantwortlicher:</b> Dies ist die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.</li>
+        <li><b>Auftragsverarbeiter:</b> Eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.</li>
+        <li><b>Einwilligung:</b> Jede freiwillig, für den bestimmten Fall, in informierter Weise und unmissverständlich abgegebene Willensbekundung in Form einer Erklärung oder einer sonstigen eindeutigen bestätigenden Handlung, mit der die betroffene Person zu verstehen gibt, dass sie mit der Verarbeitung der sie betreffenden personenbezogenen Daten einverstanden ist.</li>
+        <li><b>Website:</b> Die Website bezeichnet das gesamte Internetangebot, das von dem Verantwortlichen unter einer spezifischen URL bereitgestellt wird. Dazu gehören sämtliche durch den Verantwortlichen publizierten Inhalte, Informationen, Funktionen und Dienste, die dem Nutzer über diese URL zugänglich gemacht werden.</li>
+        <li><b>Endgerät:</b> Ein Endgerät ist ein elektronisches Gerät, das in der Lage ist, auf das Internet zuzugreifen und Webseiten zu laden. Dazu zählen unter anderem Computer, Laptops, Tablets und Smartphones.</li>
+      </ul>
+
+      <h3>5. Hosting</h3>
+      <p>Diese Website wird auf den Servern eines externen Dienstleisters gehostet, um Ihnen eine zuverlässige und sichere Nutzung dieses Onlineangebots zu gewährleisten.</p>
+      <p>Die Datenverarbeitung durch den Hosting-Anbieter erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO, da der Verantwortliche ein berechtigtes Interesse daran hat, eine stabile und sichere Website bereitzustellen. Sollte es notwendig sein, die Einwilligung des Nutzers einzuholen, basiert die Datenverarbeitung auf der Einwilligung des Nutzers gemäß Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TTDSG. Ihre Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+      <p>
+        Der Hosting-Anbieter ist:<br>
+        GitHub, Inc.<br>
+        88 Colin P. Kelly Jr. Street<br>
+        San Francisco, CA 94107<br>
+        USA
+      </p>
+      <p>Details zur Datenverarbeitung und zum Datenschutz können Sie der Datenschutzerklärung des Hosting-Anbieters entnehmen: <a href="https://github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">github.com/de/site-policy/privacy-policies/github-general-privacy-statement</a>.</p>
+      <p>Um sicherzustellen, dass Ihre Daten im Einklang mit den geltenden Datenschutzvorschriften verarbeitet werden, wurde mit dem Hosting-Anbieter ein Vertrag zur Auftragsverarbeitung (AVV) abgeschlossen.</p>
+
+      <h3>6. Rechtliche Grundlagen der Datenverarbeitung</h3>
+      <p>Die Verarbeitung Ihrer personenbezogenen Daten erfolgt auf Grundlage der Datenschutz-Grundverordnung (DSGVO) sowie weiterer relevanter gesetzlicher Bestimmungen. Je nach Zweck der Datenverarbeitung kommen unterschiedliche Rechtsgrundlagen zur Anwendung.</p>
+      <p>Sofern Sie der Verarbeitung Ihrer personenbezogenen Daten zugestimmt haben, erfolgt diese auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Die Verarbeitung Ihrer Daten kann zur Erfüllung eines Vertrags oder zur Durchführung vorvertraglicher Maßnahmen notwendig sein (Art. 6 Abs. 1 lit. b DSGVO) oder zur Erfüllung rechtlicher Verpflichtungen erforderlich sein (Art. 6 Abs. 1 lit. c DSGVO). In bestimmten Fällen erfolgt die Verarbeitung zur Wahrung berechtigter Interessen des Verantwortlichen oder eines Dritten (Art. 6 Abs. 1 lit. f DSGVO).</p>
+
+      <h3>7. Datenweitergabe an unsichere Drittstaaten und nicht DPF-zertifizierte US-Unternehmen</h3>
+      <p>Falls auf dieser Website Tools von Unternehmen eingesetzt werden, die ihren Sitz in datenschutzrechtlich unsicheren Drittstaaten haben, oder US-Tools verwendet werden, deren Anbieter nicht nach dem EU-US Data Privacy Framework (DPF) zertifiziert sind, können Ihre personenbezogenen Daten in diese Staaten übertragen und dort verarbeitet werden. Eine Datenübertragung in die USA ist nur dann zulässig, wenn der Empfänger entweder eine Zertifizierung unter dem „EU-US Data Privacy Framework“ (DPF) besitzt oder über geeignete zusätzliche Garantien verfügt.</p>
+
+      <h3>8. Speicherdauer</h3>
+      <p>Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben personenbezogene Daten beim Verantwortlichen, bis der Zweck für die Datenverarbeitung entfällt. Wenn ein berechtigtes Löschungsersuchen geltend gemacht wird oder eine Einwilligung zur Datenverarbeitung widerrufen wird, werden die betreffenden Daten gelöscht, sofern keine anderen rechtlich zulässigen Gründe für die Speicherung vorliegen (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen).</p>
+
+      <h3>9. Sicherheitsmaßnahmen und Datenminimierung</h3>
+      <p>Es werden umfassende technische und organisatorische Maßnahmen ergriffen, um Ihre personenbezogenen Daten wirksam vor zufälliger oder unrechtmäßiger Zerstörung, Verlust, Veränderung oder unbefugter Offenlegung bzw. unbefugtem Zugriff zu schützen. Dabei wird darauf geachtet, dass ausschließlich die für den jeweiligen Zweck unbedingt erforderlichen Daten erhoben und verarbeitet werden.</p>
+
+      <h3>10. SSL/TLS-Verschlüsselung</h3>
+      <p>Um die Sicherheit Ihrer Daten bei der Übertragung zu schützen, werden dem aktuellen Stand der Technik entsprechende Verschlüsselungsverfahren (z. B. SSL oder TLS) über HTTPS verwendet. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+
+      <h3>11. Speicherung von Nutzerinformationen in Log-Files</h3>
+      <p>Bei jedem Zugriff auf die Website werden automatisch Informationen allgemeiner Natur erfasst, die Ihr Browser an den Server übermittelt. Diese Informationen werden in sogenannten Log-Files gespeichert und umfassen im Regelfall:</p>
+      <ul>
+        <li>IP-Adresse des anfragenden Rechners</li>
+        <li>Datum und Uhrzeit des Zugriffs</li>
+        <li>Name und URL der abgerufenen Datei</li>
+        <li>Website, von welcher der Zugriff erfolgt (Referrer-URL)</li>
+        <li>Verwendeter Browser und User-Agent-String</li>
+        <li>Betriebssystem</li>
+        <li>Name Ihres Access-Providers</li>
+        <li>HTTP-Statuscode</li>
+      </ul>
+      <p>Die Speicherung dieser Daten erfolgt aus Sicherheitsgründen, zur Gewährleistung eines reibungslosen Verbindungsaufbaus der Website sowie zur Auswertung der Systemsicherheit und -stabilität. Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO. In keinem Fall werden die erhobenen Daten zu dem Zweck verwendet, Rückschlüsse auf Ihre Person zu ziehen.</p>
+
+      <h3>12. Nutzung des Kontaktformulars</h3>
+      <p>Bei Fragen jeglicher Art besteht die Möglichkeit, über ein auf dieser Website bereitgestelltes Formular Kontakt mit dem Verantwortlichen aufzunehmen. Um zu wissen, von wem die Anfrage stammt und um diese beantworten zu können, ist die Angabe folgender Daten erforderlich: Name, Telefonnummer und/oder E-Mail-Adresse sowie die Nachricht selbst; die Angabe der gewünschten Leistung ist optional.</p>
+      <p>Die Datenverarbeitung zum Zwecke der Kontaktaufnahme mit dem Verantwortlichen erfolgt nach Art. 6 Abs. 1 S. 1 lit. a DSGVO auf Grundlage der freiwillig erteilten Einwilligung. Die für die Benutzung des Kontaktformulars erhobenen personenbezogenen Daten werden nach Erledigung der gestellten Anfrage regelmäßig gelöscht.</p>
+
+      <h3>13. Anfragen per E-Mail oder Telefon</h3>
+      <p>Es besteht die Möglichkeit, Anfragen per E-Mail oder telefonisch an den Verantwortlichen zu richten. Die dabei übermittelten personenbezogenen Daten (z. B. Name, E-Mail-Adresse, Telefonnummer und die Anfrage selbst) werden vom Verantwortlichen ausschließlich zum Zwecke der Bearbeitung der Anfrage und etwaiger Anschlussfragen verarbeitet und gespeichert.</p>
+      <p>Die Rechtsgrundlage für diese Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, da die Verarbeitung zur Erfüllung eines Vertrags oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. Andernfalls erfolgt sie auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+      <h3>14. Untersagung der Zusendung von Werbe-E-Mails</h3>
+      <p>Die Nutzung der im Impressum veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit untersagt. Jegliche unautorisierte Verwendung der Kontaktdaten für Werbezwecke stellt eine Verletzung der Rechte des Betreibers dieser Website dar und wird nicht toleriert.</p>
+
+      <h3>15. Verarbeitung von Kunden- und Vertragsdaten</h3>
+      <p>Personenbezogene Kunden- und Vertragsdaten werden zur Begründung, inhaltlichen Ausgestaltung und Änderung der Vertragsbeziehungen erhoben, verarbeitet und genutzt. Dazu können Name, Adresse, E-Mail-Adresse und Telefonnummer gehören. Diese Informationen sind notwendig, um Dienstleistungen zur Verfügung zu stellen und zu kommunizieren.</p>
+      <p>Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. b DSGVO zur Erfüllung eines Vertrags, gemäß Art. 6 Abs. 1 lit. c DSGVO zur Erfüllung rechtlicher Verpflichtungen sowie gemäß Art. 6 Abs. 1 lit. f DSGVO zur Wahrung berechtigter Interessen. Die erhobenen Kundendaten werden nach Abschluss des Auftrags oder Beendigung der Geschäftsbeziehung und Ablauf etwaiger gesetzlicher Aufbewahrungsfristen gelöscht.</p>
+      <p>Derzeit steht auf dieser Website kein Online-Zahlungsdienst zur Verfügung.</p>
+
+      <h3>16. Google Fonts</h3>
+      <p>Auf dieser Website werden Google Fonts verwendet. Google Fonts ist ein Dienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Beim Abrufen der Google Fonts von den Servern von Google wird Ihre IP-Adresse an die Server von Google übertragen.</p>
+      <p>Google ist unter dem EU-US Data Privacy Framework (DPF) zertifiziert, welches einen angemessenen Schutz für die Übertragung von personenbezogenen Daten aus der EU in die USA gewährleistet. Weitere Informationen finden Sie unter <a href="https://www.dataprivacyframework.gov" target="_blank" rel="noopener">dataprivacyframework.gov</a> sowie in der Google-Datenschutzerklärung unter <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+
+      <h3>17. Google Maps – Link</h3>
+      <p>Diese Website enthält an einer Stelle einen Link zu Google Maps, der sich in einem neuen Tab öffnet. Es handelt sich dabei um einen reinen Verweis, keine eingebettete Karte – beim Laden dieser Seite werden daher keine Daten an Google übermittelt. Erst wenn Sie aktiv auf den Link klicken, verlassen Sie unsere Website und es gilt die Datenschutzerklärung von Google (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland), einsehbar unter <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+
+      <p style="margin-top:40px;font-size:.9rem">Stand: 20. November 2026</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html#start" style="margin-bottom:16px"><span class="brand-mark"><span class="m">M</span>T</span><span class="brand-text"><b>DIENSTLEISTUNGEN</b><span>Paderborn</span></span></a>
+        <p style="max-width:36ch">Hausmeisterservice, Renovierung, Gartenpflege und Bodenarbeiten in Paderborn und Umgebung.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul><li><a href="index.html#start">Start</a></li><li><a href="index.html#leistungen">Leistungen</a></li><li><a href="index.html#ueber-uns">Über uns</a></li><li><a href="index.html#projekte">Projekte</a></li><li><a href="index.html#kontakt">Kontakt</a></li></ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul><li>Markus Fres</li><li>Auf der Sühle 12, 33102 Paderborn</li><li><a href="tel:+4915901055517">0159 01055517</a></li><li><a href="impressum.html">Kontaktdaten im Impressum</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 MT Dienstleistungen. Alle Rechte vorbehalten.</span>
+      <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var burger=document.getElementById('burger'),menu=document.getElementById('menu');
+  burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Menü schließen':'Menü öffnen');});
+  menu.addEventListener('click',function(e){if(e.target.tagName==='A'){menu.classList.remove('open');burger.setAttribute('aria-expanded','false');}});
+</script>
+</body>
+</html>

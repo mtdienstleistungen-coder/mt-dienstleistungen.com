@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impressum | MT Dienstleistungen</title>
+<meta name="description" content="Impressum der MT Dienstleistungen Website.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500;62..125,700;62..125,800;62..125,900&family=Figtree:wght@400;500;600&family=Caveat:wght@600&display=swap">
+<style>
+:root{
+  --ink:#08172d;
+  --ink-2:#0f2240;
+  --paper:#f6f2eb;
+  --paper-2:#ece4d6;
+  --gold:#c8825a;
+  --gold-deep:#9a5634;
+  --text:#1d1b17;
+  --muted:#5f584d;
+  --muted-dark:#b3bccb;
+  --line:#d9cfbe;
+  --line-dark:#1e3250;
+  --white:#ffffff;
+  --f-display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --f-body:"Figtree","Segoe UI",system-ui,sans-serif;
+  --f-script:"Caveat","Segoe Script",cursive;
+  --wrap:1180px;
+  --r:4px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--paper);color:var(--text);font-family:var(--f-body);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--gold);color:var(--ink);padding:8px 14px;z-index:100;font-weight:600}
+.skip:focus{left:16px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media(min-width:720px){.wrap{padding-left:max(32px,env(safe-area-inset-left,0px));padding-right:max(32px,env(safe-area-inset-right,0px))}}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.05}
+h1{font-size:clamp(1.9rem,3.4vw,3.3rem);overflow-wrap:break-word;font-weight:900;font-stretch:88%;letter-spacing:-.01em;text-transform:uppercase}
+p{margin:0}
+.eyebrow{font-family:var(--f-display);font-size:.78rem;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.dark .eyebrow{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:var(--r);font-family:var(--f-display);font-weight:700;font-size:.92rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:#dc9a72}
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(8,23,45,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line-dark);color:var(--white)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--white)}
+.brand-mark{font-family:var(--f-display);font-weight:900;font-size:1.9rem;font-stretch:110%;line-height:1;letter-spacing:-.02em;position:relative;padding-top:6px}
+.brand-mark .m{color:var(--gold);background:linear-gradient(135deg,#5e2e15 0%,#e4a47c 22%,#ffdcc4 34%,#b8693f 48%,#7c3f20 62%,#eab08a 78%,#4f250f 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-text b{font-family:var(--f-display);font-weight:500;font-size:.72rem;letter-spacing:.34em}
+.brand-text span{font-size:.62rem;letter-spacing:.2em;color:var(--muted-dark);text-transform:uppercase;margin-top:3px}
+.menu{display:flex;align-items:center;gap:30px;list-style:none;margin:0;padding:0}
+.menu a{text-decoration:none;font-size:.9rem;font-weight:500;color:#ddd5c8;position:relative;padding:6px 0;transition:color .2s}
+.menu a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--gold);transition:right .3s}
+.menu a:hover{color:var(--white)}
+.menu a:hover::after{right:0}
+.nav .btn{padding:11px 18px;font-size:.8rem}
+.burger{display:none;background:none;border:1px solid var(--line-dark);color:var(--white);width:44px;height:44px;border-radius:var(--r);cursor:pointer;align-items:center;justify-content:center}
+.burger svg{width:22px;height:22px}
+@media(max-width:940px){
+  .menu,.nav .btn-gold{display:none}
+  .burger{display:inline-flex}
+  .menu.open{display:flex;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--ink);border-bottom:1px solid var(--line-dark);padding:8px max(16px,env(safe-area-inset-right,0px)) 18px max(16px,env(safe-area-inset-left,0px))}
+  .menu.open a{display:block;padding:14px 0;border-bottom:1px solid var(--line-dark);font-size:1rem}
+  .menu.open a::after{display:none}
+}
+.dark{background:var(--ink);color:var(--white)}
+section{padding-block:56px}
+@media(max-width:720px){section{padding-block:40px}}
+.page-head{display:flex;flex-direction:column;gap:18px}
+.footer{background:#050f1f;color:var(--muted-dark);padding-block:64px 32px;font-size:.92rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid var(--line-dark)}
+.foot-grid h4{font-family:var(--f-display);font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin:0 0 16px}
+.foot-grid ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.foot-grid a{text-decoration:none}
+.foot-grid a:hover{color:var(--white)}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;font-size:.85rem}
+.foot-bottom nav{display:flex;gap:22px}
+.foot-bottom a{text-decoration:none}
+.foot-bottom a:hover{color:var(--white)}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Rechtstext */
+.legal-wrap{max-width:760px}
+.legal h3{font-family:var(--f-display);font-size:1.3rem;font-weight:800;margin:40px 0 12px;color:var(--text)}
+.legal h3:first-child{margin-top:0}
+.legal p{margin-bottom:16px;color:var(--muted)}
+.legal ul{margin:0 0 16px;padding-left:22px;color:var(--muted)}
+.legal li{margin-bottom:4px}
+.legal a{color:var(--gold-deep);text-decoration:underline}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Zum Hauptinhalt springen</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html#start" aria-label="MT Dienstleistungen – zur Startseite">
+      <span class="brand-mark"><span class="m">M</span>T</span>
+      <span class="brand-text"><b>DIENSTLEISTUNGEN</b><span>Paderborn</span></span>
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="index.html#start">Start</a></li>
+      <li><a href="index.html#leistungen">Leistungen</a></li>
+      <li><a href="index.html#ueber-uns">Über uns</a></li>
+      <li><a href="index.html#projekte">Projekte</a></li>
+      <li><a href="index.html#kontakt">Kontakt</a></li>
+    </ul>
+    <a class="btn btn-gold" href="index.html#kontakt">Jetzt anfragen</a>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="dark">
+    <div class="wrap page-head">
+      <span class="eyebrow">Rechtliches</span>
+      <h1>Impressum</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap legal-wrap legal">
+      <p>Dieses Impressum gilt für alle Angebote unter der Domain www.mt-dienstleistungen.com inklusive aller Subdomains (Unterseiten).</p>
+
+      <h3>Angaben gemäß § 5 DDG</h3>
+      <p>
+        Markus Fres<br>
+        Auf der Sühle 12<br>
+        33102 Paderborn<br>
+        Deutschland
+      </p>
+      <p>
+        Telefon: <a href="tel:+4915901055517">0159 01055517</a><br>
+        E-Mail: <a href="mailto:mtdienstleistungen@outlook.de">mtdienstleistungen@outlook.de</a><br>
+        Kontakt: <a href="https://www.mt-dienstleistungen.com">www.mt-dienstleistungen.com</a>
+      </p>
+
+      <h3>Wirtschafts-Identifikationsnummer</h3>
+      <p>DE460356463</p>
+
+      <h3>Vertretungsberechtigte Personen</h3>
+      <p>Markus Fres, Inhaber</p>
+
+      <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
+      <p>
+        Markus Fres<br>
+        Auf der Sühle 12, 33102 Paderborn
+      </p>
+
+      <h3>Haftungshinweis</h3>
+      <p>Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen. Für den Inhalt verlinkter Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+
+      <h3>Gültigkeit</h3>
+      <p>Dieses Impressum gilt ab dem 20. November 2026.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html#start" style="margin-bottom:16px"><span class="brand-mark"><span class="m">M</span>T</span><span class="brand-text"><b>DIENSTLEISTUNGEN</b><span>Paderborn</span></span></a>
+        <p style="max-width:36ch">Hausmeisterservice, Renovierung, Gartenpflege und Bodenarbeiten in Paderborn und Umgebung.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul><li><a href="index.html#start">Start</a></li><li><a href="index.html#leistungen">Leistungen</a></li><li><a href="index.html#ueber-uns">Über uns</a></li><li><a href="index.html#projekte">Projekte</a></li><li><a href="index.html#kontakt">Kontakt</a></li></ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul><li>Markus Fres</li><li>Auf der Sühle 12, 33102 Paderborn</li><li><a href="tel:+4915901055517">0159 01055517</a></li><li><a href="mailto:mtdienstleistungen@outlook.de">mtdienstleistungen@outlook.de</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 MT Dienstleistungen. Alle Rechte vorbehalten.</span>
+      <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var burger=document.getElementById('burger'),menu=document.getElementById('menu');
+  burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Menü schließen':'Menü öffnen');});
+  menu.addEventListener('click',function(e){if(e.target.tagName==='A'){menu.classList.remove('open');burger.setAttribute('aria-expanded','false');}});
+</script>
+</body>
+</html>
